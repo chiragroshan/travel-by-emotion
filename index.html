@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel India by Mood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">TRAVEL<span>INDIA</span></div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#mood-selector">Moods</a></li>
+      <li><a href="#result">Destinations</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#" class="btn login">Login</a>
+      <a href="#mood-selector" class="btn primary">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>TRAVEL THAT MATCHES<br>YOUR MOOD</h1>
+      <p>Cash that travels—here, there, everywhere. Discover India based on your emotions, whether it’s adventure, relaxation, romance, or spirituality.</p>
+      <a href="#mood-selector" class="btn primary">Start Your Journey</a>
+    </div>
+    <div class="hero-image">
+      <img src="illustration-hero.png" alt="Travel India Illustration">
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <h2>Why Travel with Mood?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <img src="icon-adventure.svg" alt="Adventure Icon">
+        <h3>Adventure Awaits</h3>
+        <p>Explore mountains, rivers, and forests for thrill and excitement.</p>
+      </div>
+      <div class="feature">
+        <img src="icon-relax.svg" alt="Relaxation Icon">
+        <h3>Relax & Recharge</h3>
+        <p>Find serene beaches, calm lakes, and hill stations to unwind.</p>
+      </div>
+      <div class="feature">
+        <img src="icon-culture.svg" alt="Culture Icon">
+        <h3>Culture & Heritage</h3>
+        <p>Experience India’s vibrant traditions, festivals, and cuisine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mood Selector -->
+  <section id="mood-selector" class="mood-selector">
+    <div class="mood-card">
+      <h2>Choose Your Mood</h2>
+      <p>Select your current mood and we’ll suggest perfect destinations for you.</p>
+      <select id="emotion">
+        <option value="">-- Select Your Mood --</option>
+        <option value="adventurous">Adventurous</option>
+        <option value="relaxed">Relaxed</option>
+        <option value="happy">Happy</option>
+        <option value="romantic">Romantic</option>
+        <option value="spiritual">Spiritual</option>
+        <option value="thoughtful">Thoughtful</option>
+      </select>
+      <button onclick="suggestDestination()" class="btn primary">Find Destinations</button>
+    </div>
+  </section>
+
+  <!-- Destination Results -->
+  <section id="result" class="destinations"></section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Travel India by Mood. All Rights Reserved.</p>
+      <p>Made with ❤️ for explorers</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
